@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trainee </title>
+<style type="text/css">
+.error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+            overflow:visible;
+        }
+
+</style>
+<!--   <link rel="stylesheet" type="text/css" href="task.css" >-->
+ <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+    <div class="trainee">
+     
+     <!--<h1> Trainee Form </h1>-->
+    <form action="back.java" name="myForm" id="form" method="post">
+        
+        
+        <!-- For Text -->
+        <label for="name"> Full Name </label>
+        <div class="formdesign" >
+            <input type="text" name="myName" id="name"  placeholder="Enter your Full Name" onkeyup="myFullName()"> 
+            <p id="errorname" class="error"></p>
+        </div>
+        <br>
+
+        <!-- For Phone -->
+        <label for="Phone"> Mobile Number </label>
+        <div class="formdesign">
+            <input type="tel" name="myNumber" id="Phone"  placeholder="Enter your Mobile Number" onkeyup="myMobile()" > 
+            <p id="ephone" class="error"></p>
+        </div>
+        <br>
+        
+        <!-- For Date -->
+        <label for="Date"> Date Of Birth </label>
+        <div class="formdesign">
+            <input type="date" name="myDate" id="DOB" onchange="myDOB()"> 
+            <p id="errordate" class="error"></p>
+        </div>
+        <br> 
+        
+        <!-- For Email -->
+        <label for="Email"> Email </label>
+        <div class="formdesign">
+            <input type="email" name="myEmail" id="Email"  placeholder="Enter your Email-id" onkeyup="myMail()"> 
+            <p id="erroremail" class="error"></p>
+        </div>
+        <br>
+
+        <!-- For ZipCode -->
+        <label for="Zip"> ZipCode </label>
+        <div class="formdesign">
+            <input type="tel" name="myZip" id="Zip"  placeholder="Enter your ZipCode" onkeyup="myZipCode()"> 
+            <p id="ezip" class="error"></p>
+        </div>
+        <br>
+
+        <!-- For City -->
+        <label for="City"> City </label>
+        <div class="formdesign" >
+            <select name="City" id="city" onchange="myCity()">
+                <option value="sel" hidden>----Select a City----</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                 <option value="Hyderbad">Hyderbad</option>  
+              </select>
+              <p id="errorcity" class="error"></p>
+        </div>
+        <br>
+
+      
+      
+        <!-- For Radio -->
+        <label for="Matiral" > Marital Status</label>
+        <div class="formdesign" >
+            Single<input type="radio" name="myMarital" value="Single" id="single" onchange =" myMar()">  
+            Married <input type="radio" name="myMarital" value="Married" id="married"  onchange =" myMar()">
+           <p id="errormarital" class="error"></p>
+        </div>
+        <br>
+
+          <!-- For Occupation -->
+          <label for="Occupation"> Occupation </label>
+          <div class="formdesign" >
+            <select name="Occ" id="occ" onchange="myOccupation()" >
+                <option value="sel" hidden>----Select a Occupation----</option>
+                <option value="Business">Business</option>
+                <option value="Developer">Developer</option>
+                <option value="Testing">Testing</option>
+                <option value="Oracle">Oracle</option>
+                 <option value="Others">Others</option>  
+              </select>
+              <p id="errorocc" class="error"></p>
+          </div>
+          <br>
+  
+
+        <!-- For Password -->
+       <label for="Password "> Password </label>
+        <div class="formdesign" id="pass">
+            <input type="password" name="fpass" id="epass"  onkeyup="myPassword()">
+            <p id="errorpass" class="error"></p>
+        </div>
+        <br>
+        
+        <!-- For Confirm Password -->
+       <label for="Confirm Password "> Confirm Password </label>
+        <div class="formdesign" id="cpass">
+           <input type="password" name="fcpass" id="ecpass" onkeyup="myConfirm()" >
+            <p id="errorcpass" class="error"></p>
+        </div>
+        <br>
+
+         <div class="btn">
+            <button type="submit" value="Submit" class="btn1" id="btn1"onclick="return validate()"> Submit </button>
+
+        </div>
+    </form>
+
+ 
+
+</div>
+<p><tt id="results"></tt></p> 
+    
+</body>
+<script type="text/javascript" src="task.js"></script>
+    <script>
+  // function showValues() {
+  //   var str = $( "form" ).serialize();
+  //   $( "#results" ).text( str );
+  // }
+  // $( "input,select" ).on( "change", showValues );
+ 
+  // var result=showValues();
+  // console.log(result);
+  $('#btn1').click(function() {
+            var data = $('form').serialize();
+            console.log(data); // [{name:"name",value:"Harsukh"},{name:"email",value:"harsukh21@gmail.com"}]
+        });
+</script>
+</html>

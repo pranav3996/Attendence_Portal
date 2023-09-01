@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>DashBoard</title>
+  <!-- Material icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+  <!-- StyleSheets-->
+  <link rel="stylesheet" href="Admindashstyle.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img alt="" src="cloverC.png">
+          <h2 class="danger">Clover Infotech</h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="#" class="active">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="task.html">
+          <span class="material-icons-sharp">person_add</span>
+          <h3>Add Trainee</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp"> group_add</span>
+          <h3> Group Data</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">view_compact</span>
+          <h3>View Details</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">view_list</span>
+          <h3>View Attendance</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">settings</span>
+          <h3>Settings</h3>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+      </div>
+    </aside>
+    <!------------------------------ END OF ASIDE ------------------------------------>
+    <main>
+      <h1>Dashboard</h1>
+      <div class="date">
+        <input type="date">
+      </div>
+      <div class="insights">
+        <div class="employee">
+          <span class="material-icons-sharp">groups</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Total Employee</h3>
+              <h1>5429</h1>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!-------------------------END OF EMPLOYEE----------------------------->
+        <div class="project">
+          <span class="material-icons-sharp"> work_history</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Total Project</h3>
+              <h1>500+</h1>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!-------------------------END OF PROJECT----------------------------->
+        <div class="client">
+          <span class="material-icons-sharp">handshake</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Total Client</h3>
+              <h1>50+</h1>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!-------------------------END OF CLIENTS----------------------------->
+      </div>
+      <!---------------------------END OF INSIGHTS------------------------------------------->
+      <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Employee Code</th>
+              <th>Employee Name</th>
+              <th>Technology</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CI13718</td>
+              <td>Pranav</td>
+              <td>Java-29</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>CI13712</td>
+              <td>Mohsin</td>
+              <td>Java-29</td>
+              <td>Active</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+      </div>
+    </main>
+    <!--------------------------------END OF MAIN-------------------------------->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-sharp active">light_mode</span>
+          <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Hey,<b>Shweta</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+        </div>
+      </div>
+      <!-------------------------END OF TOP----------------------------------------->
+
+
+    <div class="recent-updates">
+    <h2>Recent Updates</h2>
+    <div class="updates">
+      <div class="update">
+        <div class="message">
+          <p><b>Mandar</b> and <b>Sammer</b> done dashbord work.</p>
+          <small class="text-muted"> 2 Minutes Ago</small>
+        </div>
+      </div>
+      <div class="update">
+        <div class="message">
+          <p><b>Jitu</b> done style work.</p>
+          <small class="text-muted"> 2 Minutes Ago</small>
+        </div>
+      </div>
+      <div class="update">
+        <div class="message">
+          <p><b>Pranav </b> done Validation work.</p>
+          <small class="text-muted"> 2 Minutes Ago</small>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!---------------------END OF RECENT UPDATES------------------------------------------------------>
+     <div class="projects">
+       <h2>Clover Projects</h2>
+       <div class="item news">
+        <div class="icon">
+          <span class="material-icons-sharp">newspaper</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>News Portal</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 class="success"> 78% </h5>
+        </div>
+       </div>
+       <div class="item interview">
+        <div class="icon">
+          <span class="material-icons-sharp">question_answer</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>Interview Portal</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 style="color: #ff7782;"> 47% </h5>
+        </div>
+       </div>
+       <div class="item dash">
+        <div class="icon">
+          <span class="material-icons-sharp">dashboard_customize</span>  
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>DashBoard</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 class="success"> 95% </h5>
+        </div>
+       </div>
+       <div class=" item add-project">
+        <div>
+          <span class="material-icons-sharp">add</span>
+          <h3>Add Project</h3>  
+        </div>
+       </div>
+     </div>
+  </div>
+  </div>
+
+  <script src="Admindash.js"></script>
+
+</body>
+
+</html>

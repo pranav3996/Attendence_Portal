@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trainee </title>
+<style type="text/css">
+.error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+            
+        }
+</style>
+<link rel="stylesheet" type="text/css" href="addtrainee.css" />
+
+</head>
+<body>
+    <div class="trainee">
+        <div class="back"></div>
+     <!--<h1> Trainee Form </h1>-->
+    <form action="Backend.java" name="myForm" onsubmit="validate()" onreset="clearErrors()">
+        <label for="EmployeeCode"> Employee Code </label>
+        <div class="formdesign">
+            <input type="text" name="myEmployeeCode" id="EmployeeCode"  placeholder="Enter your Employee Code"> 
+            <p id="errorcode" class="error"></p>
+        </div>
+        <br>
+        
+        <!-- For Text -->
+        <label for="name"> Employee Name </label>
+        <div class="formdesign" >
+            <input type="text" name="myName" id="name"  placeholder="Enter your Employee Name"> 
+            <p id="errorname" class="error"></p>
+        </div>
+        <br>
+
+          <!-- Technology -->
+          <label for="tech">Technology</label>
+          <div class="formdesign" >
+          <select name="techs" id="techs" form="techform">
+            <option value="select" hidden>----Select----</option>
+            <option value="java">JAVA</option>
+            <option value="dotnet">.Net</option>
+            <option value="middle">Middleware</option>
+            <option value="oracle">Oracle</option>
+             <option value="app">App Support</option>
+              <option value="rpa">Robotics</option>
+          </select>
+        </div>
+          <br>
+         
+        <!-- For Phone -->
+        <label for="Phone"> Mobile No. </label>
+        <div class="formdesign">
+            <input type="tel" name="myNumber" id="Phone"  placeholder="Enter your Mobile Number" > 
+            <p id="ephone" class="error"></p>
+        </div>
+        <br>
+        
+        <!-- For Email -->
+        <label for="Email"> Email </label>
+        <div class="formdesign">
+            <input type="email" name="myEmail" id="Email"  placeholder="Enter your Email-id"> 
+            <p id="erroremail" class="error"></p>
+        </div>
+        <br>
+        <!-- For Date -->
+        <label for="Date"> Date Of Joining </label>
+        <div class="formdesign">
+            <input type="date" name="myDate" id="Date"> 
+        </div>
+        <br>
+      
+        <!-- For Radio -->
+        <label for="Gender" > Gender </label>
+        <div class="formdesign" >
+            Male <input type="radio" name="myGender" id="Gender">  Female <input type="radio" name="myGender" >
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+       <label for="Password "> Password </label>
+        <div class="formdesign" id="pass">
+            <input type="password" name="fpass" id="epass" >
+            <p id="errorpass" class="error"></p>
+        </div>
+        <br>
+
+       <label for="Confirm Password "> Confirm Password </label>
+        <div class="formdesign" id="cpass">
+           <input type="password" name="fcpass" id="ecpass" >
+            <p id="errorcpass" class="error"></p>
+        </div>
+        <br>
+         <div class="btn">
+            <button type="submit" value="Submit" class="btn1"> Submit </button>
+            <button type="reset" value="Reset" class="btn2"> Reset </button>
+        </div>
+    </form>
+</div>
+    <script type="text/javascript" src="AddTrainee.js"></script>
+</body>
+</html>
